@@ -1,0 +1,21 @@
+.sign-in-ctnr {
+  padding: 12px 16px;
+  border: 1px solid #ebeaff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.04);
+  background-color: var(--white);
+  display: flex;
+  gap: 8px;
+}
+.sign-in-ctnr button {
+  border: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+  background-color: var(--white);
+  flex: 1;
+}
+.sign-in-ctnr {
+  cursor: pointer;
+}

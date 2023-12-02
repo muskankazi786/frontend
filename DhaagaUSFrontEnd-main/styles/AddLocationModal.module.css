@@ -1,0 +1,146 @@
+.label {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--blac);
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+.controls {
+  position: relative;
+}
+.custom-modal-body {
+  padding: 0 32px 32px 32px;
+}
+.controls input {
+  padding: 16px 12px 16px 44px;
+  border: 0;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom: 1px solid #dddcfd;
+  background: var(--white);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+}
+.controls input:focus {
+  outline: none;
+}
+.controls input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray-shade-2);
+}
+.controls .search-icon {
+  position: absolute;
+  left: 12px;
+  top: 15px;
+}
+.controls button {
+  padding: 8px 12px 8px 12px;
+  border: 0;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background: var(--white);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4626bb;
+}
+.controls button:focus {
+  outline: none;
+}
+.address-card {
+  padding: 16px;
+  padding-left: 48px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  background: var(--white);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 66px;
+}
+.address-card .address {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--gray-shade-2);
+  width: 70%;
+}
+.address-card button {
+  font-size: 14px;
+  font-weight: 700;
+  color: #562ec4;
+  background-color: var(--white);
+  border: 0;
+  padding: 0;
+}
+.address-card button {
+  outline: none;
+}
+.address-card svg {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+.use-btn {
+  width: 100%;
+  display: flex;
+}
+.use-btn button {
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  color: var(--white);
+  background-color: var(--primary);
+  border: 0;
+  border-radius: 12px;
+  width: 90%;
+  margin-top: 229px;
+}
+.use-btn button:focus {
+  outline: none;
+}
+
+@media (max-width: 991px) {
+  .place-search {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 24px;
+    z-index: 1;
+  }
+  .custom-modal-body {
+    padding: 0;
+  }
+  .controls {
+    width: 90%;
+    z-index: 10;
+    margin: 0 auto;
+  }
+  .address-card {
+    z-index: 10;
+    bottom: 98px;
+    width: 90%;
+    margin-left: 25px;
+  }
+  .use-btn {
+    position: absolute;
+    bottom: 25px;
+  }
+  .use-btn button {
+    z-index: 10;
+    width: 70%;
+    margin-left: 25px;
+  }
+}

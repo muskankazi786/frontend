@@ -1,0 +1,17 @@
+.header {
+  padding: 16px 24px;
+  background-color: var(--white);
+}
+.head {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+}
+.edit-button {
+  background-color: var(--white);
+  border: none;
+  padding: 0;
+}
+.edit-button:focus {
+  outline: 0;
+}

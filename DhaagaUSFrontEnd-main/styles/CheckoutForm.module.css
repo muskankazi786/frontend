@@ -1,0 +1,16 @@
+.subscribe {
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--primary);
+  color: var(--white);
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 10px;
+}
+.subscribe:focus {
+  outline: 0;
+}
+.isLoading {
+  background-color: #9b9ab9;
+  pointer-events: none;
+}

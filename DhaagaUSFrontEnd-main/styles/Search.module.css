@@ -1,0 +1,40 @@
+.search {
+  position: relative;
+}
+.search input {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px 12px 15px 44px;
+  width: 100%;
+  border-radius: 32px;
+  border: none;
+}
+.search input::placeholder {
+  color: var(--gray-shade-2);
+}
+.search input:focus {
+  outline: none;
+}
+.search svg {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+}
+
+@media (max-width: 767px) {
+  .search {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 100%;
+    padding: 0 25px;
+    z-index: 1;
+  }
+  .search input {
+    padding: 12px 10px 12px 44px;
+  }
+  .search svg {
+    top: 10px;
+    left: 37px;
+  }
+}

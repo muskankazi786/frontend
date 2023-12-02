@@ -1,0 +1,70 @@
+.drp-dwn-button {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 32px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+  background-color: var(--white);
+  color: var(--gray-shade-2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  border: none;
+}
+.drp-dwn-button + div {
+  padding: 8px 0;
+  width: 217px;
+  height: 160px;
+  border-radius: 12px;
+  background-color: var(--white);
+  border: 1px solid #ebeaff;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+  inset: 4px 0px auto auto !important;
+}
+.drp-dwn-button + div button {
+  padding: 7px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray-shade-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.drp-dwn-button + div button.recommended {
+  color: #adb5bd;
+  pointer-events: none;
+}
+.drp-dwn-button::after {
+  content: unset !important;
+}
+.drp-dwn-button .ellipse-container {
+  position: absolute;
+  top: 7px;
+  left: 30px;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  opacity: 0;
+}
+.drp-dwn-button .ellipse {
+  width: 10px;
+  height: 10px;
+  background-color: #fc327b;
+  border-radius: 50%;
+  transform: scaleX(1.01);
+}
+.drp-dwn-button .ellipse-container.show-ellipse-container {
+  opacity: 1;
+}
+.isDisabled {
+  background-color: #e9ecef;
+  color: #adb5bd;
+  pointer-events: none;
+}
+
+.isDisabled .ellipse {
+  background-color: #adb5bd !important;
+}

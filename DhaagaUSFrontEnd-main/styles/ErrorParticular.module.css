@@ -1,0 +1,19 @@
+.error-container {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ff0033;
+  color: var(--white);
+}
+.actions button {
+  border: 1px solid #ff0033;
+  background-color: var(--white);
+  padding: 12px 16px;
+  border-radius: 15px;
+  font-weight: 600;
+  width: 150px;
+  transition: background-color 0.3s ease-in-out;
+}
+.actions button:hover,
+.actions button:focus {
+  background-color: #faafbe;
+}

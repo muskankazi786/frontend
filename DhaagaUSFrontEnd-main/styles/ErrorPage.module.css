@@ -1,0 +1,91 @@
+.error {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #02242b;
+  height: 80vh;
+}
+.error > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.oops {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  font-size: 70px;
+  font-weight: 700;
+  color: lawngreen;
+}
+.oops div:nth-child(1) {
+  transform: rotate(-20deg) scaleY(1.5);
+}
+.oops div:nth-child(2) {
+  transform: rotate(20deg) scaleY(1.5);
+}
+.oops div:nth-child(3) {
+  transform: skew(0deg, 23deg) scaleY(1.6);
+}
+.oops div:nth-child(4) {
+  transform: skew(-16deg, 0deg) scaleY(1.5);
+}
+.oops div:nth-child(5) {
+  transform: scale(1.9, 1.6);
+}
+.error h3 {
+  color: #1e9a7d;
+  font-weight: 400;
+}
+.error h1 {
+  color: var(--white);
+  font-size: 70px;
+  font-weight: 700;
+}
+.error p {
+  color: var(--gray);
+  font-size: 25px;
+}
+.actions {
+  display: flex;
+  gap: 20px;
+}
+.actions button {
+  padding: 12px 16px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #02242b;
+  border: 1px solid #1e9a7d;
+  border-radius: 12px;
+  color: #1e9a7d;
+  width: 200px;
+  transition: all 0.2s ease-in-out;
+}
+.actions button:hover {
+  background-color: rgb(255, 255, 255, 0.3);
+}
+.actions button:focus {
+  outline: 0;
+}
+
+@media (max-width: 767px) {
+  .error {
+    height: 100vh;
+  }
+  .oops {
+    font-size: 60px;
+  }
+  .error h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .actions {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,17 @@
+.grid-row-container {
+  display: grid;
+  grid-template-columns: auto 740px auto;
+}
+.head {
+  padding: 16px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+  background: var(--white);
+}
+
+@media (max-width: 767px) {
+  .grid-row-container {
+    grid-template-columns: 1fr;
+  }
+}

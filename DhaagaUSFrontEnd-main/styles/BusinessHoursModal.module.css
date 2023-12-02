@@ -1,0 +1,26 @@
+.modal-custom-width {
+  width: 360px;
+  max-width: 400px;
+}
+.modal-title-cstm {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--black);
+}
+.show-grid {
+  padding: 0 24px 32px 24px;
+}
+.row-container {
+  padding: 8px 0;
+}
+.day {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-shade-2);
+  margin-right: 8px;
+}
+.hours {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray-shade-2);
+}

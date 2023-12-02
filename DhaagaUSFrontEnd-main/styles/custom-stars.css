@@ -1,0 +1,143 @@
+.custom-starability-result-yellow {
+  position: relative;
+  width: 100px;
+  height: 21px;
+  background-image: url("../public/static/images/small-review-stars-yellow.svg");
+  font-size: 0.1em;
+  color: transparent;
+}
+.custom-starability-result-purple {
+  position: relative;
+  width: 100px;
+  height: 21px;
+  background-image: url("../public/static/images/small-review-stars-purple.svg");
+  font-size: 0.1em;
+  color: transparent;
+}
+.custom-starability-result-yellow::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  height: 21px;
+  background-image: url("../public/static/images/small-review-stars-yellow.svg");
+  background-position: 0 -21px;
+}
+.custom-starability-result-purple::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  height: 21px;
+  background-image: url("../public/static/images/small-review-stars-purple.svg");
+  background-position: 0 -21px;
+}
+.custom-starability-result-yellow[data-rating="5"]::after,
+.custom-starability-result-purple[data-rating="5"]::after {
+  width: 100px;
+}
+.custom-starability-result-yellow[data-rating="4"]::after,
+.custom-starability-result-purple[data-rating="4"]::after {
+  width: 80px;
+}
+.custom-starability-result-yellow[data-rating="3"]::after,
+.custom-starability-result-purple[data-rating="3"]::after {
+  width: 60px;
+}
+.custom-starability-result-yellow[data-rating="2"]::after,
+.custom-starability-result-purple[data-rating="2"]::after {
+  width: 40px;
+}
+.custom-starability-result-yellow[data-rating="1"]::after,
+.custom-starability-result-purple[data-rating="1"]::after {
+  width: 20px;
+}
+.custom-starability-basic {
+  display: block;
+  position: relative;
+  width: 220px;
+  padding: 0;
+  border: none;
+}
+.custom-starability-basic > input {
+  position: absolute;
+  margin-right: -100%;
+  opacity: 0;
+}
+.custom-starability-basic > input:checked ~ label,
+.custom-starability-basic > input:focus ~ label {
+  background-position: 0 0;
+}
+.custom-starability-basic > input:checked + label,
+.custom-starability-basic > input:focus + label {
+  background-position: 0 -44px;
+}
+.custom-starability-basic > input[disabled]:hover + label {
+  cursor: default;
+}
+.custom-starability-basic > input:not([disabled]):hover ~ label {
+  background-position: 0 0;
+}
+.custom-starability-basic > input:not([disabled]):hover + label {
+  background-position: 0 -44px;
+}
+.custom-starability-basic > input:not([disabled]):hover + label::before {
+  opacity: 1;
+}
+.custom-starability-basic > input:focus + label {
+  outline: 1px dotted #999;
+}
+.custom-starability-basic .starability-focus-ring {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  outline: 2px dotted #999;
+  pointer-events: none;
+  opacity: 0;
+}
+.custom-starability-basic > .input-no-rate:focus ~ .starability-focus-ring {
+  opacity: 1;
+}
+.custom-starability-basic > label {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 44px;
+  height: 44px;
+  /* font-size: 0.1em; */
+  color: transparent;
+  cursor: pointer;
+  background-image: url("../public/static/images/add-review-stars.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -44px;
+}
+.custom-starability-basic > label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 44px;
+  background-image: url("../public/static/images/add-review-stars.svg");
+  background-position: 0 44px;
+  pointer-events: none;
+  opacity: 0;
+  width: 100%;
+}
+.custom-starability-basic > label:nth-of-type(5)::before {
+  width: 176px;
+  left: -176px;
+}
+.custom-starability-basic > label:nth-of-type(4)::before {
+  width: 132px;
+  left: -132px;
+}
+.custom-starability-basic > label:nth-of-type(3)::before {
+  width: 88px;
+  left: -88px;
+}
+.custom-starability-basic > label:nth-of-type(2)::before {
+  width: 44px;
+  left: -44px;
+}
+.custom-starability-basic > label:nth-of-type(1)::before {
+  width: 0px;
+  left: 0px;
+}

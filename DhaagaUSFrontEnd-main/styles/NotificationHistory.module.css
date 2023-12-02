@@ -1,0 +1,39 @@
+.label {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--black);
+}
+.notification-cntnr {
+  background-color: var(--white);
+  padding: 8px 0;
+  max-height: 493.6px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.notification {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notification span {
+  font-size: 10px;
+  font-weight: 400;
+  color: #9b9ab9;
+}
+.rating-info {
+  font-size: 12px;
+  font-weight: 400;
+  color: #71718f;
+}
+.no-notif-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-shade-2);
+  text-align: center;
+  width: 200px;
+}

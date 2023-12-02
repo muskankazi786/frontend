@@ -1,0 +1,55 @@
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 12px 0;
+}
+.heading .head {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gray-shade-2);
+}
+.heading .drp-dwn-button {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 32px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+  background-color: var(--white);
+  color: var(--gray-shade-2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  border: none;
+}
+.drp-dwn-button + div {
+  padding: 8px 20px;
+  width: 217px;
+  height: 160px;
+  border-radius: 12px;
+  background-color: var(--white);
+  border: 1px solid #ebeaff;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+  inset: 4px 0px auto auto !important;
+}
+.drp-dwn-button + div button {
+  padding: 7px 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray-shade-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading .drp-dwn-button::after {
+  content: unset;
+}
+.heading button:focus {
+  outline: var(--primary) solid 1px;
+}
+.heading .drp-dwn-button .ellipse {
+  position: absolute;
+  top: 7px;
+  left: 30px;
+}

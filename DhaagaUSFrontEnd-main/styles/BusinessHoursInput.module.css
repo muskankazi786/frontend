@@ -1,0 +1,47 @@
+.label {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black);
+}
+.business-hours {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.business-hours label {
+  width: fit-content !important;
+}
+.business-hours input {
+  width: fit-content !important;
+  padding-left: 16px !important;
+}
+.store-closed {
+  padding: 12px;
+  background-color: var(--light-blue-shade);
+  border: 1px solid #ebeaff;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 8px;
+}
+.store-closed.active {
+  background-color: #562ec4;
+  border-color: #562ec4;
+  color: var(--white);
+}
+.store-closed:focus {
+  outline: 0;
+}
+.add-time-field {
+  padding: 12px;
+  background-color: var(--light-blue-shade);
+  border: 1px solid #ebeaff;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 8px;
+}
+.add-time-field:focus {
+  outline: 0;
+}

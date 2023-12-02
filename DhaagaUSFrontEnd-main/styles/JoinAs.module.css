@@ -1,0 +1,32 @@
+.join-as-business {
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 16px;
+  background-color: var(--primary);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
+}
+.join-as-customer {
+  padding: 12px 16px;
+  border: 1px solid #ebeaff;
+  border-radius: 12px;
+  background-color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+  filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 4%));
+}
+.already-have-acc {
+  padding: 0;
+  border: 0;
+  background-color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  color: #562ec4;
+}
+.join-as-business:focus,
+.join-as-customer:focus,
+.already-have-acc:focus {
+  outline: 0;
+}

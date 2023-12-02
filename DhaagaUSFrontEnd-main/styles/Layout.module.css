@@ -1,0 +1,38 @@
+.main {
+  margin-top: 25px;
+  height: calc(100vh - 110px);
+}
+.backdrop {
+  background-color: var(--light-blue-shade);
+  height: 100vh;
+  position: relative;
+}
+.info-text {
+  background-color: var(--white);
+  border: 1px solid gray;
+  padding: 15px 25px;
+  box-shadow: 0px 5px 8px gray;
+  position: absolute;
+  text-align: center;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.info-text h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.info-text p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .main {
+    height: auto;
+    /* margin-top: 0; */
+  }
+  .main {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}

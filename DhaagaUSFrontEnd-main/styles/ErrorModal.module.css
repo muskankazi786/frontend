@@ -1,0 +1,35 @@
+.custom-modal {
+  max-width: 90%;
+}
+.custom-modal > div {
+  border-radius: 32px;
+}
+.custom-modal-header {
+  background-color: #ff0033;
+  color: var(--white);
+  border-bottom: 0;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+}
+.custom-modal-header h2 {
+  font-weight: 600;
+}
+.custom-modal-body {
+  background-color: #ff0033;
+  color: var(--white);
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+.custom-modal-body .actions button {
+  border: 1px solid #ff0033;
+  background-color: var(--white);
+  padding: 12px 16px;
+  border-radius: 15px;
+  font-weight: 600;
+  width: 150px;
+  transition: background-color 0.3s ease-in-out;
+}
+.custom-modal-body .actions button:hover,
+.custom-modal-body .actions button:focus {
+  background-color: #faafbe;
+}
